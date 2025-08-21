@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mental_health_app/presentation.onboarding/onboarding.dart';
 import 'core/theme.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Mental Health',
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: Center(child: Text('New Mental Health App')),
+      home: OnboardingScreen(),
     );
   }
 }
