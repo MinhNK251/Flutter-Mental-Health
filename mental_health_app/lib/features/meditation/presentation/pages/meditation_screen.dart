@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mental_health_app/core/theme.dart';
 import 'package:mental_health_app/features/meditation/presentation/widgets/feeling_button.dart';
+import 'package:mental_health_app/features/meditation/presentation/widgets/task_card.dart';
 
 class MeditationScreen extends StatelessWidget {
   const MeditationScreen({super.key});
@@ -50,7 +51,11 @@ class MeditationScreen extends StatelessWidget {
                 'Today\'s Task',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
-
+              SizedBox(height: 16,),
+              TaskCard(
+                  title: 'Morning',
+                  description: 'Let\'s open up to the thing that matters among the people',
+                  color: DefaultColors.task1),
             ],
           ),
         ),
