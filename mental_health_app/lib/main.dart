@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health_app/presentation.onboarding/onboarding.dart';
+import 'package:mental_health_app/presentation/onboarding/onboarding.dart';
 import 'core/theme.dart';
 
 void main() {
