@@ -14,35 +14,41 @@ class TaskCard extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(
+      child: Row(
         children: [
-          Column(
-            children: [
-              Text(
-                title,
-                style: Theme.of(context).textTheme.labelMedium,
-              ),
-              SizedBox(height: 8,),
-              Row(
-                children: [
-                  Flexible(
-                    child: Text(
-                      description,
-                      style: Theme.of(context).textTheme.labelSmall,
-                    ),
+          SizedBox(width: 6,),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                    fontWeight: FontWeight.bold,
                   ),
-                  SizedBox(height: 3,),
-                  Container(
-                    padding: const EdgeInsets.all(3),
-                    decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(50),
+                ),
+                SizedBox(height: 8,),
+                Row(
+                  children: [
+                    Flexible(
+                      child: Text(
+                        description,
+                        style: Theme.of(context).textTheme.labelSmall,
+                      ),
                     ),
-                    child: Icon(Icons.arrow_forward_ios),
-                  )
-                ]
-              ),
-            ],
+                    SizedBox(height: 3,),
+                    Container(
+                      padding: const EdgeInsets.all(3),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Icon(Icons.arrow_forward_ios),
+                    )
+                  ]
+                ),
+              ],
+            ),
           ),
         ],
       )

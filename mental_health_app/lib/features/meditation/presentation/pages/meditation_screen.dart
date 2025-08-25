@@ -56,6 +56,16 @@ class MeditationScreen extends StatelessWidget {
                   title: 'Morning',
                   description: 'Let\'s open up to the thing that matters among the people',
                   color: DefaultColors.task1),
+              SizedBox(height: 16,),
+              TaskCard(
+                  title: 'Afternoon',
+                  description: 'Let\'s open up to the thing that matters among the people',
+                  color: DefaultColors.task2),
+              SizedBox(height: 16,),
+              TaskCard(
+                  title: 'Evening',
+                  description: 'Let\'s open up to the thing that matters among the people',
+                  color: DefaultColors.task3),
             ],
           ),
         ),
