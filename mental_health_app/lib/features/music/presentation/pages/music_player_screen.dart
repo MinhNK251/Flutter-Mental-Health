@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mental_health_app/core/theme.dart';
+import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 
 class MusicPlayerScreen  extends StatelessWidget {
   const MusicPlayerScreen ({super.key});
@@ -35,6 +36,16 @@ class MusicPlayerScreen  extends StatelessWidget {
               Text('Daily Dose of Happiness', style: Theme.of(context).textTheme.labelLarge,),
               Text('By : Echorio the Novice Artist', style: Theme.of(context).textTheme.labelSmall,),
               const Spacer(),
+              ProgressBar(
+                progress: Duration(milliseconds: 1000),
+                total: Duration(milliseconds: 5000),
+                baseBarColor: DefaultColors.lightpink,
+                thumbColor: DefaultColors.pink,
+                progressBarColor: DefaultColors.pink,
+                onSeek: (duration) {
+                  print('Seek to: $duration');
+                },
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
