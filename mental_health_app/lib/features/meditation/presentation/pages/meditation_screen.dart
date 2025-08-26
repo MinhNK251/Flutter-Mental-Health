@@ -28,7 +28,7 @@ class MeditationScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Welcome back, Echorio',
+                'Welcome back, Echorio!',
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               SizedBox(height: 32,),
